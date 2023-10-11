@@ -176,5 +176,46 @@ var filmList = [
         'images/the-shawshank-redemption-12.jpg',
         'images/the-shawshank-redemption-13.jpg',
       ]
+  ),
+  DataFilm(
+      Title: "What's Eating Gilbert Grape",
+      Year: '1993',
+      Rated: 'PG-13',
+      Released: '04 Mar 1994',
+      Runtime: '118 min',
+      Genre: [
+        'Drama'
+      ],
+      Director: 'Lasse Hallström',
+      Writer: 'Peter Hedges',
+      Actors: 'Johnny Depp, Leonardo DiCaprio, Juliette Lewis',
+      Plot: 'A young man in a small Midwestern town struggles to care for his mentally-disabled younger brother and morbidly obese mother while attempting to pursue his own happiness.',
+      Language: 'English',
+      Country: 'United States',
+      Awards: 'Nominated for 1 Oscar. 8 wins & 7 nominations total',
+      Poster: 'images/whats-eating-gilbert-grape-1.jpg',
+      Metascore: '73',
+      imdbRating: '7.7',
+      imdbVotes: '247,715',
+      imdbID: 'tt0108550',
+      Type: 'movie',
+      DVD: '01 Aug 2013',
+      BoxOffice: '10,032,765',
+      Production: 'N/A',
+      Website: 'N/A',
+      Response: 'True',
+      imageUrls: [
+        'images/whats-eating-gilbert-grape-1.jpg',
+        'images/whats-eating-gilbert-grape-2.jpg',
+        'images/whats-eating-gilbert-grape-3.jpg',
+        'images/whats-eating-gilbert-grape-4.jpg',
+        'images/whats-eating-gilbert-grape-5.jpg',
+        'images/whats-eating-gilbert-grape-6.jpg',
+        'images/whats-eating-gilbert-grape-7.jpg',
+        'images/whats-eating-gilbert-grape-8.jpg',
+        'images/whats-eating-gilbert-grape-9.jpg',
+        'images/whats-eating-gilbert-grape-10.jpg',
+        'images/whats-eating-gilbert-grape-11.jpg',
+      ]
   )
 ];
