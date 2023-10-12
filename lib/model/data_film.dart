@@ -217,5 +217,37 @@ var filmList = [
         'images/whats-eating-gilbert-grape-10.jpg',
         'images/whats-eating-gilbert-grape-11.jpg',
       ]
+  ),
+  DataFilm(
+      Title: "Good Will Hunting",
+      Year: "1997",
+      Rated: "R",
+      Released: "09 Jan 1998",
+      Runtime: "126 min",
+      Genre: [
+        "Drama",
+        "Romance"
+      ],
+      Director: "Gus Van Sant",
+      Writer: "Matt Damon, Ben Affleck",
+      Actors: "Robin Williams, Matt Damon, Ben Affleck",
+      Plot: "Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.",
+      Language: "English",
+      Country: "United States",
+      Awards: "Won 2 Oscars. 24 wins & 61 nominations total",
+      Poster: "images/good-will-hunting-1.jpg",
+      Metascore: "70",
+      imdbRating: "8.3",
+      imdbVotes: "1,024,873",
+      imdbID: "tt0119217",
+      Type: "movie",
+      DVD: "14 Apr 2016",
+      BoxOffice: "138,433,435",
+      Production: "N/A",
+      Website: "N/A",
+      Response: "True",
+      imageUrls: [
+        'images/good-will-hunting-1.jpg'
+      ]
   )
 ];
