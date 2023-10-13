@@ -13,7 +13,7 @@ class DataFilm {
   String Country;
   String Awards;
   String Poster;
-  List? Ratings;
+  List<Map<String, String>> Ratings;
   String Metascore;
   String imdbRating;
   String imdbVotes;
@@ -42,6 +42,7 @@ class DataFilm {
     required this.Country,
     required this.Awards,
     required this.Poster,
+    required this.Ratings,
     required this.Metascore,
     required this.imdbRating,
     required this.imdbVotes,
@@ -75,6 +76,20 @@ var filmList = [
       Country: 'United Kingdom, France, United States',
       Awards: 'Won 1 Oscar. 52 wins & 150 nominations total',
       Poster: 'images/atonement-1.jpg',
+      Ratings: [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.8/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "83%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "85/100"
+      }
+      ],
       Metascore: '85',
       imdbRating: '7.8',
       imdbVotes: '291,511',
@@ -116,6 +131,16 @@ var filmList = [
       Country: "United States",
       Awards: "Nominated for 5 Oscars. 7 wins & 6 nominations total",
       Poster: "images/the-great-dictator-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "92%"
+        }
+      ],
       Metascore: "N/A",
       imdbRating: "8.4",
       imdbVotes: "231,652",
@@ -152,6 +177,20 @@ var filmList = [
       Country: "United States",
       Awards: "Nominated for 7 Oscars. 21 wins & 42 nominations total",
       Poster: "images/the-shawshank-redemption-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "9.3/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "91%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "82/100"
+        }
+      ],
       Metascore: "82",
       imdbRating: "9.3",
       imdbVotes: "2,802,199",
@@ -194,6 +233,20 @@ var filmList = [
       Country: 'United States',
       Awards: 'Nominated for 1 Oscar. 8 wins & 7 nominations total',
       Poster: 'images/whats-eating-gilbert-grape-1.jpg',
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "90%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "73/100"
+        }
+      ],
       Metascore: '73',
       imdbRating: '7.7',
       imdbVotes: '247,715',
@@ -236,6 +289,20 @@ var filmList = [
       Country: "United States",
       Awards: "Won 2 Oscars. 24 wins & 61 nominations total",
       Poster: "images/good-will-hunting-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.3/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "97%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "70/100"
+        }
+      ],
       Metascore: "70",
       imdbRating: "8.3",
       imdbVotes: "1,024,873",
