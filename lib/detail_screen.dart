@@ -66,13 +66,13 @@ class DetailScreen extends StatelessWidget {
                 )
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 child: Row(
                   children: <Widget>[
                     Expanded(
                       flex: 2,
                       child: SizedBox(
-                        height: 250,
+                        height: 210,
                         child: Image.asset(film.Poster)
                       ),
                     ),
@@ -92,16 +92,9 @@ class DetailScreen extends StatelessWidget {
                                 return Container(
                                   margin: const EdgeInsets.only(right: 10.0),
                                   padding: const EdgeInsets.all(8.0),
-                                  decoration: const BoxDecoration(
-                                    border: Border(
-                                      top: BorderSide(color: Color(0xFF000000)),
-                                      left: BorderSide(color: Color(0xFF000000)),
-                                      right: BorderSide(color: Color(0xFF000000)),
-                                      bottom: BorderSide(color: Color(0xFF000000)),
-                                    ),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(3.0)
-                                      )
+                                  decoration: BoxDecoration(
+                                      border: Border.all(color: const Color(0xFF000000)),
+                                      borderRadius: const BorderRadius.all(Radius.circular(3.0))
                                   ),
                                   child: Center(child: Text(genre)),
                                 );
@@ -109,7 +102,9 @@ class DetailScreen extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 8.0),
-                          Text(film.Plot)
+                          Text(
+                              film.Plot
+                          )
                         ],
                       ),
                     )
@@ -117,7 +112,7 @@ class DetailScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                  margin: const EdgeInsets.symmetric(vertical: 16.0),
+                  margin: const EdgeInsets.symmetric(vertical: 8.0),
                   padding: const EdgeInsets.symmetric(horizontal: 12.0),
                   child: const WatchlistButton()
               ),
@@ -157,10 +152,6 @@ class DetailScreen extends StatelessWidget {
                         const SizedBox(height: 8.0),
                         Text(
                             film.Metascore
-                        ),
-                        const SizedBox(height: 8.0),
-                        const Text(
-                            '52 critics'
                         )
                       ],
                     )
@@ -168,16 +159,17 @@ class DetailScreen extends StatelessWidget {
                 ),
               ),
               Card(
-                margin: const EdgeInsets.symmetric(vertical: 16.0),
+                elevation: 3.0,
+                margin: const EdgeInsets.symmetric(vertical: 8.0),
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       const Text(
                         'Photos',
                         style: TextStyle(
-                            fontSize: 30.0,
+                            fontSize: 24.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
@@ -190,7 +182,7 @@ class DetailScreen extends StatelessWidget {
                             final imageFilm = film.imageUrls[index];
 
                             return Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(top: 8.0, right: 16.0, bottom: 8.0),
                               child: ClipRRect(
                                 borderRadius: const BorderRadius.all(Radius.circular(10.0)),
                                 child: Image(
@@ -204,6 +196,249 @@ class DetailScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              Card(
+                elevation: 3.0,
+                margin: const EdgeInsets.symmetric(vertical: 16.0),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 10.0),
+                        child: const Text(
+                          'Cast',
+                          style: TextStyle(
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Actors',
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            Text(
+                              film.Actors,
+                              style: const TextStyle(
+                                  fontSize: 16.0
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              'Director',
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            Text(
+                              film.Director,
+                              style: const TextStyle(
+                                  fontSize: 16.0
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              'Writers',
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            Text(
+                              film.Writer,
+                              style: const TextStyle(
+                                  fontSize: 16.0
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 3.0,
+                margin: const EdgeInsets.only(top: 8.0, bottom: 16.0),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 10.0),
+                        child: const Text(
+                          'Awards',
+                          style: TextStyle(
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      Text(
+                        film.Awards,
+                        style: const TextStyle(
+                          fontSize: 16.0
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 3.0,
+                margin: const EdgeInsets.symmetric(vertical: 8.0),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 2.0),
+                        child: const Text(
+                          'Ratings',
+                          style: TextStyle(
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: film.Ratings.map((rating) {
+                          return Container(
+                            margin: const EdgeInsets.only(top: 8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  rating["Source"]!,
+                                  style: const TextStyle(
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500
+                                  ),
+                                ),
+                                Text(
+                                  rating['Value']!,
+                                  style: const TextStyle(
+                                    fontSize: 16.0
+                                  ),
+                                )
+                              ],
+                            ),
+                          );
+                        }).toList(),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 3.0,
+                margin: const EdgeInsets.symmetric(vertical: 16.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      const Text(
+                        'Details',
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              'Release Date',
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            Text(
+                              film.Released,
+                              style: const TextStyle(
+                                fontSize: 16.0
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              'Country of Origin',
+                              style: TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            Text(
+                              film.Country,
+                              style: const TextStyle(
+                                  fontSize: 16.0
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(top: 8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            const Text(
+                              'Language Spoken',
+                              style: TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            Text(
+                              film.Language,
+                              style: const TextStyle(
+                                  fontSize: 16.0
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
@@ -233,12 +468,13 @@ class _WatchlistButtonState extends State<WatchlistButton> {
         style: ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)
-            )
+            ),
+          elevation: 3.0
         ),
         icon: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Icon(
-            isWatchlist ? Icons.add : Icons.done,
+            isWatchlist ? Icons.done : Icons.add,
             size: 40.0,
           ),
         ),
