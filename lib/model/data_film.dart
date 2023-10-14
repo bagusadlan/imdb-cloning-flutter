@@ -258,7 +258,6 @@ var filmList = [
       Website: 'N/A',
       Response: 'True',
       imageUrls: [
-        'images/whats-eating-gilbert-grape-1.jpg',
         'images/whats-eating-gilbert-grape-2.jpg',
         'images/whats-eating-gilbert-grape-3.jpg',
         'images/whats-eating-gilbert-grape-4.jpg',
@@ -315,6 +314,227 @@ var filmList = [
       Response: "True",
       imageUrls: [
         'images/good-will-hunting-1.jpg'
+      ]
+  ),
+  DataFilm(
+      Title: "Dead Poets Society",
+      Year: "1989",
+      Rated: "PG",
+      Released: "09 Jun 1989",
+      Runtime: "128 min",
+      Genre: [
+        "Comedy",
+        "Drama"
+      ],
+      Director: "Peter Weir",
+      Writer: "Tom Schulman",
+      Actors: "Robin Williams, Robert Sean Leonard, Ethan Hawke",
+      Plot: "Maverick teacher John Keating returns in 1959 to the prestigious New England boys' boarding school where he was once a star student, using poetry to embolden his pupils to new heights of self-expression.",
+      Language: "English, Latin",
+      Country: "United States",
+      Awards: "Won 1 Oscar. 20 wins & 19 nominations total",
+      Poster: "images/dead-poets-society-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "84%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "79/100"
+        }
+      ],
+      Metascore: "79",
+      imdbRating: "8.1",
+      imdbVotes: "523,936",
+      imdbID: "tt0097165",
+      Type: "movie",
+      DVD: "09 Aug 2016",
+      BoxOffice: "95,860,116",
+      Production: "N/A",
+      Website: "N/A",
+      Response: "True",
+      imageUrls: [
+        'images/dead-poets-society-2.jpg'
+        'images/dead-poets-society-3.jpg'
+        'images/dead-poets-society-4.jpg'
+        'images/dead-poets-society-5.jpg'
+        'images/dead-poets-society-6.jpg'
+        'images/dead-poets-society-7.jpg'
+        'images/dead-poets-society-8.jpg'
+        'images/dead-poets-society-9.jpg'
+        'images/dead-poets-society-10.jpg'
+        'images/dead-poets-society-11.jpg'
+        'images/dead-poets-society-12.jpg'
+    ]
+  ),
+  DataFilm(
+      Title: "The Green Mile",
+      Year: "1999",
+      Rated: "R",
+      Released: "10 Dec 1999",
+      Runtime: "189 min",
+      Genre: [
+        "Crime",
+        "Drama",
+        "Fantasy"
+      ],
+      Director: "Frank Darabont",
+      Writer: "Stephen King, Frank Darabont",
+      Actors: "Tom Hanks, Michael Clarke Duncan, David Morse",
+      Plot: "A tale set on death row in a Southern jail, where gentle giant John possesses the mysterious power to heal people's ailments. When the lead guard, Paul, recognizes John's gift, he tries to help stave off the condemned man's execut...",
+      Language: "English, French",
+      Country: "United States",
+      Awards: "Nominated for 4 Oscars. 15 wins & 37 nominations total",
+      Poster: "images/the-green-mile-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "79%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "61/100"
+        }
+      ],
+      Metascore: "61",
+      imdbRating: "8.6",
+      imdbVotes: "1,364,089",
+      imdbID: "tt0120689",
+      Type: "movie",
+      DVD: "15 Aug 2008",
+      BoxOffice: "136,801,374",
+      Production: "N/A",
+      Website: "N/A",
+      Response: "True",
+      imageUrls: [
+        'images/the-green-mile-2.jpg',
+        'images/the-green-mile-3.jpg',
+        'images/the-green-mile-4.jpg',
+        'images/the-green-mile-5.jpg',
+        'images/the-green-mile-6.jpg',
+        'images/the-green-mile-7.jpg',
+      ]
+  ),
+  DataFilm(
+      Title: "The Magnificent Seven",
+      Year: "2016",
+      Rated: "PG-13",
+      Released: "23 Sep 2016",
+      Runtime: "132 min",
+      Genre: [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      Director: "Antoine Fuqua",
+      Writer: "Akira Kurosawa, Shinobu Hashimoto, Hideo Oguni",
+      Actors: "Denzel Washington, Chris Pratt, Ethan Hawke",
+      Plot: "Seven gunmen from a variety of backgrounds are brought together by a vengeful young widow to protect her town from the private army of a destructive industrialist.",
+      Language: "English, North American Indian, Spanish",
+      Country: "United States, Australia",
+      Awards: "5 wins & 12 nominations",
+      Poster: "images/the-magnificent-seven-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "64%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "54/100"
+        }
+      ],
+      Metascore: "54",
+      imdbRating: "6.9",
+      imdbVotes: "223,249",
+      imdbID: "tt2404435",
+      Type: "movie",
+      DVD: "20 Dec 2016",
+      BoxOffice: "93,432,655",
+      Production: "N/A",
+      Website: "N/A",
+      Response: "True",
+      imageUrls: [
+        'images/the-magnificent-seven-2.jpg',
+        'images/the-magnificent-seven-3.jpg',
+        'images/the-magnificent-seven-4.jpg',
+        'images/the-magnificent-seven-5.jpg',
+        'images/the-magnificent-seven-6.jpg',
+        'images/the-magnificent-seven-7.jpg',
+        'images/the-magnificent-seven-8.jpg',
+        'images/the-magnificent-seven-9.jpg',
+        'images/the-magnificent-seven-10.jpg',
+        'images/the-magnificent-seven-11.jpg',
+      ]
+  ),
+  DataFilm(
+      Title: "Redeeming Love",
+      Year: "2022",
+      Rated: "PG-13",
+      Released: "21 Jan 2022",
+      Runtime: "134 min",
+      Genre: [
+        "Drama",
+        "Romance"
+      ],
+      Director: "D.J. Caruso",
+      Writer: "Francine Rivers, D.J. Caruso",
+      Actors: "Abigail Cowen, Tom Lewis, Eric Dane",
+      Plot: "Sold into prostitution as a child, Angel knows nothing but betrayal. Can her heart ever be mended? Based upon the novel by Francine Rivers.",
+      Language: "English",
+      Country: "United States",
+      Awards: "1 win & 1 nomination",
+      Poster: "images/redeeming-love-1.jpg",
+      Ratings: [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "11%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "32/100"
+        }
+      ],
+      Metascore: "32",
+      imdbRating: "6.7",
+      imdbVotes: "10,318",
+      imdbID: "tt11365186",
+      Type: "movie",
+      DVD: "07 Mar 2022",
+      BoxOffice: "9,214,020",
+      Production: "N/A",
+      Website: "N/A",
+      Response: "True",
+      imageUrls: [
+        'images/redeeming-love-2.jpg',
+        'images/redeeming-love-3.jpg',
+        'images/redeeming-love-4.jpg',
+        'images/redeeming-love-5.jpg',
+        'images/redeeming-love-6.jpg',
+        'images/redeeming-love-7.jpg',
+        'images/redeeming-love-8.jpg',
+        'images/redeeming-love-9.jpg',
+        'images/redeeming-love-10.jpg',
+        'images/redeeming-love-11.jpg',
+        'images/redeeming-love-12.jpg',
+        'images/redeeming-love-13.jpg',
       ]
   )
 ];
