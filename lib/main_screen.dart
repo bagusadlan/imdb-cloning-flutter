@@ -11,7 +11,23 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Film'),
+        title: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            if (constraints.maxWidth <= 600) {
+              return const Text('Film');
+            } else if (constraints.maxWidth <= 1200) {
+              return const Padding(
+                padding: EdgeInsets.only(left: 24.0),
+                child: Text('Film'),
+              );
+            } else {
+              return const Padding(
+                padding: EdgeInsets.only(left: 128.0),
+                child: Text('Film'),
+              );
+            }
+          },
+        ),
       ),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
